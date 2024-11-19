@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat entre Duas Pessoas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="script.js" defer></script>
+  
+</head>
+
+<body>
+  <aside>
+    <div class="tituloChat">
+      <h1>QualiCore Chat</h1>
+      <button type="button">Nova Chat</button>
+    </div>
+
+    <div id="listaDeConversas">
+      <div class="card">
+        <div class="avatarCard">
+          <img src="../eu.jpg" alt="fotoPerfil" width="60rem" height="50rem" style="border-radius: 50%;">
+        </div>
+        <div class="conteudoCard">
+          <h4>Gustavo Machado <span>19/11/2024</span></h4>
+          <p>Oi, tudo bem ?</p>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+  <section id="chat">
+    <nav>
+      <div class="avacartChat">
+        <img src="../eu.jpg" alt="fotoPerfil" width="60rem" height="50rem" style="border-radius: 50%;">
+      </div>
+      <h2>Gustavo Machado</h2>
+    </nav>
+    <div id="caixa-chat"></div>
+    <input type="text" id="mensagem" placeholder="Digite sua mensagem">
+    <button id="sendBtn" onclick="enviarMensagem()"><i class="bi bi-send"></i></button>
+  </section>
+</body>
+
+</html>
